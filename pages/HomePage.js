@@ -8,6 +8,7 @@ export class HomePage {
     this.welcomeUser = page.locator('#nameofuser');
     this.aboutLink=page.getByRole('link', {name:'About us'});
     this.contactLink=page.getByRole('link', {name: 'Contact'});
+    this.SignUplink=page.getByRole('link', {name: 'Sign up'});
   }
 
   async goto() {
@@ -37,6 +38,10 @@ export class HomePage {
 
   async clickContact(){
     await this.contactLink.click();
+  }
+
+  async clickSignUp(){
+    await this.SignUplink.click();
   }
 
 
