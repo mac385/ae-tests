@@ -9,3 +9,4 @@ test('open homepage and verify title', async ({ page }) => {
   await homePage.goto();
   await homePage.verifyTitle();
 });
+//checking if pipeline is working
