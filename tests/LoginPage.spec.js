@@ -4,6 +4,8 @@ import { test } from '@playwright/test';
 import { HomePage } from '../pages/HomePage.js';
 import { LoginPage } from '../pages/LoginPage.js';
 
+
+//test if loginpage loads
 test('user can login successfully', async ({ page }) => {
   const homePage = new HomePage(page);
   const loginPage = new LoginPage(page);
