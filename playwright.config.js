@@ -29,7 +29,8 @@ export default defineConfig({
     /* Base URL to use in actions like `await page.goto('')`. */
     // baseURL: 'http://localhost:3000',
     baseURL: 'https://demoblaze.com',
-    headless: false,
+    // Headless in CI, headed locally – universal across all CI platforms
+    headless: !!process.env.CI,
 
     
 
